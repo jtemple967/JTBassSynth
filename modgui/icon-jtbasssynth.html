@@ -1,0 +1,34 @@
+<div class="mod-pedal jtbs{{{cns}}}">
+    <div mod-role="drag-handle" class="mod-drag-handle"></div>
+
+    <div class="mod-knob-image jtbs-knob jtbs-big jtbs-dry"        mod-role="input-control-port" mod-port-symbol="dry"         title="Dry"></div>
+    <div class="mod-knob-image jtbs-knob jtbs-big jtbs-filter"     mod-role="input-control-port" mod-port-symbol="filter"      title="Filter"></div>
+    <div class="mod-knob-image jtbs-knob jtbs-big jtbs-resonance"  mod-role="input-control-port" mod-port-symbol="resonance"   title="Resonance"></div>
+    <div class="mod-knob-image jtbs-knob jtbs-big jtbs-synth"      mod-role="input-control-port" mod-port-symbol="synth"       title="Synth"></div>
+    <div class="mod-knob-image jtbs-knob jtbs-big jtbs-attack"     mod-role="input-control-port" mod-port-symbol="attack"      title="Attack"></div>
+    <div class="mod-knob-image jtbs-knob jtbs-big jtbs-decay"      mod-role="input-control-port" mod-port-symbol="decay"       title="Decay"></div>
+    <div class="mod-knob-image jtbs-knob jtbs-big jtbs-env_amount" mod-role="input-control-port" mod-port-symbol="env_amount"  title="Sweep"></div>
+    <div class="mod-knob-image jtbs-knob jtbs-big jtbs-glide"      mod-role="input-control-port" mod-port-symbol="glide"       title="Glide"></div>
+    <div class="mod-knob-image jtbs-knob jtbs-small jtbs-sensitivity" mod-role="input-control-port" mod-port-symbol="sensitivity" title="Gate Threshold"></div>
+
+    <div class="mod-knob-image jtbs-knob jtbs-selector" mod-role="input-control-port" mod-port-symbol="voice" title="Voice"></div>
+
+    <div class="mod-light jtbs-led on" mod-role="bypass-light"></div>
+    <div class="mod-footswitch jtbs-footswitch" mod-role="bypass"></div>
+
+    <div class="mod-pedal-input">
+        {{#effect.ports.audio.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-audio-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.audio.input}}
+    </div>
+
+    <div class="mod-pedal-output">
+        {{#effect.ports.audio.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-audio-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-output-image"></div>
+        </div>
+        {{/effect.ports.audio.output}}
+    </div>
+</div>

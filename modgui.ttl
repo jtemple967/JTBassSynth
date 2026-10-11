@@ -1,0 +1,54 @@
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+
+<urn:jtbasssynth:bass-synth>
+	modgui:gui [
+		modgui:resourcesDirectory <modgui> ;
+		modgui:iconTemplate <modgui/icon-jtbasssynth.html> ;
+		modgui:stylesheet <modgui/stylesheet-jtbasssynth.css> ;
+		modgui:screenshot <modgui/screenshot-jtbasssynth.png> ;
+		modgui:thumbnail <modgui/thumbnail-jtbasssynth.png> ;
+		modgui:brand "JT" ;
+		modgui:label "Bass Synth" ;
+		modgui:port [
+			lv2:index 0 ;
+			lv2:symbol "dry" ;
+			lv2:name "Dry"
+		] , [
+			lv2:index 1 ;
+			lv2:symbol "synth" ;
+			lv2:name "Synth"
+		] , [
+			lv2:index 2 ;
+			lv2:symbol "voice" ;
+			lv2:name "Voice"
+		] , [
+			lv2:index 3 ;
+			lv2:symbol "filter" ;
+			lv2:name "Filter"
+		] , [
+			lv2:index 4 ;
+			lv2:symbol "resonance" ;
+			lv2:name "Reso"
+		] , [
+			lv2:index 5 ;
+			lv2:symbol "attack" ;
+			lv2:name "Attack"
+		] , [
+			lv2:index 6 ;
+			lv2:symbol "decay" ;
+			lv2:name "Decay"
+		] , [
+			lv2:index 7 ;
+			lv2:symbol "env_amount" ;
+			lv2:name "Sweep"
+		] , [
+			lv2:index 8 ;
+			lv2:symbol "sensitivity" ;
+			lv2:name "Gate"
+		] , [
+			lv2:index 9 ;
+			lv2:symbol "glide" ;
+			lv2:name "Glide"
+		] ;
+	] .

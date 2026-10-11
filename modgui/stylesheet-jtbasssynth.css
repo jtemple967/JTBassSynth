@@ -1,0 +1,111 @@
+/* JTBassSynth MOD GUI. Coordinates match tools/make_modgui.py. */
+
+.jtbs{{{cns}}} {
+    position: relative;
+    width: 360px;
+    height: 600px;
+    background-image: url(/resources/panel.png{{{ns}}});
+    background-repeat: no-repeat;
+    background-size: 360px 600px;
+    border-radius: 16px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.55);
+}
+
+.jtbs{{{cns}}} .mod-drag-handle {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 1;
+}
+
+/* ---- knobs (sprite strips, one square frame per position) ---- */
+
+.jtbs{{{cns}}} .jtbs-knob {
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.jtbs{{{cns}}} .jtbs-big {
+    width: 56px;
+    height: 56px;
+    background-image: url(/resources/knob.png{{{ns}}});
+}
+
+.jtbs{{{cns}}} .jtbs-small {
+    width: 34px;
+    height: 34px;
+    background-image: url(/resources/knob-small.png{{{ns}}});
+}
+
+.jtbs{{{cns}}} .jtbs-selector {
+    width: 84px;
+    height: 84px;
+    left: 138px;  /* 180 - 42 */
+    top: 276px;   /* 318 - 42 */
+    background-image: url(/resources/selector.png{{{ns}}});
+}
+
+/* centre (cx, cy) minus half the knob size */
+.jtbs{{{cns}}} .jtbs-dry         { left:  24px; top:  42px; }
+.jtbs{{{cns}}} .jtbs-filter      { left: 108px; top:  42px; }
+.jtbs{{{cns}}} .jtbs-resonance   { left: 196px; top:  42px; }
+.jtbs{{{cns}}} .jtbs-synth       { left: 280px; top:  42px; }
+.jtbs{{{cns}}} .jtbs-attack      { left:  24px; top: 144px; }
+.jtbs{{{cns}}} .jtbs-decay       { left: 108px; top: 144px; }
+.jtbs{{{cns}}} .jtbs-env_amount  { left: 196px; top: 144px; }
+.jtbs{{{cns}}} .jtbs-glide       { left: 280px; top: 144px; }
+.jtbs{{{cns}}} .jtbs-sensitivity { left: 301px; top: 301px; }
+
+/* ---- bypass LED ---- */
+
+.jtbs{{{cns}}} .jtbs-led {
+    position: absolute;
+    z-index: 2;
+    left: 37px;   /* 42 - 5 */
+    top: 313px;   /* 318 - 5 */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: none;
+}
+
+.jtbs{{{cns}}} .jtbs-led.on {
+    background: radial-gradient(circle at 35% 35%, #ffc2b8 0%, #ff3b2e 45%, #b0120a 100%);
+    box-shadow: 0 0 6px 2px rgba(255, 50, 35, 0.75);
+}
+
+.jtbs{{{cns}}} .jtbs-led.off {
+    background: radial-gradient(circle at 35% 35%, #5a1410 0%, #2a0606 100%);
+    box-shadow: none;
+}
+
+/* ---- footswitch (the cap is drawn on the panel) ---- */
+
+.jtbs{{{cns}}} .jtbs-footswitch {
+    position: absolute;
+    z-index: 2;
+    left: 150px;  /* 180 - 30 */
+    top: 500px;   /* 530 - 30 */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: none;
+    cursor: pointer;
+}
+
+.jtbs{{{cns}}} .jtbs-footswitch:active {
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+/* ---- audio jacks ---- */
+
+/* Only the height is set here. MOD's own pedal CSS places the input on
+ * the left edge and the output on the right; overriding left/right
+ * pushes the jacks onto the panel. */
+.jtbs{{{cns}}} .mod-pedal-input,
+.jtbs{{{cns}}} .mod-pedal-output {
+    top: 60px;
+    z-index: 3;
+}
