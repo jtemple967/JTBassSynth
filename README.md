@@ -68,11 +68,14 @@ handles chords and double stops the way an analog octave fuzz does.
 You need a C compiler and the LV2 headers (`lv2-dev` on Debian/Ubuntu, `lv2` on Arch/Homebrew).
 
 ```bash
+git clone https://github.com/jtemple967/JTBassSynth.git
+cd JTBassSynth
 make
 make install        # → ~/.lv2 (Linux), ~/Library/Audio/Plug-Ins/LV2 (macOS), %APPDATA%/LV2 (MinGW)
+make test           # offline tracking test with synthetic plucks
 ```
 
-URI: `urn:jtbasssynth:bass-synth`. The plugin works in Ardour, Carla, Reaper (with LV2 enabled),
+URI: `https://github.com/jtemple967/JTBassSynth`. The plugin works in Ardour, Carla, Reaper (with LV2 enabled),
 Qtractor, MOD Dev, guitarix/jalv and similar hosts.
 
 ## Offline test
@@ -134,3 +137,7 @@ native build.
 * For classic squelchy synth bass, try *Saw + Sub*, Filter around 200 Hz, Resonance 0.6,
   Sweep 0.7 and Decay 250 ms.
 * For a slow pad-like swell, try *PWM*, Attack 600 ms, Sweep 0.2 and Glide 60 ms.
+
+## License
+
+Copyright (c) 2026 Jonas Temple. Released under the GNU General Public License v3.0 or later; see `LICENSE`.

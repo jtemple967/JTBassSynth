@@ -1,4 +1,5 @@
 @prefix doap:   <http://usefulinc.com/ns/doap#> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
 @prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
 @prefix mod:    <http://moddevices.com/ns/mod#> .
 @prefix pprops: <http://lv2plug.in/ns/ext/port-props#> .
@@ -6,10 +7,20 @@
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix units:  <http://lv2plug.in/ns/extensions/units#> .
 
-<urn:jtbasssynth:bass-synth>
+<https://github.com/jtemple967/JTBassSynth>
 	a lv2:Plugin , lv2:SimulatorPlugin ;
 	doap:name "JTBassSynth" ;
-	doap:license <http://opensource.org/licenses/isc> ;
+	doap:license <http://opensource.org/licenses/GPL-3.0> ;
+	doap:maintainer [
+		a foaf:Person ;
+		foaf:name "Jonas Temple"
+	] ;
+	doap:homepage <https://github.com/jtemple967/JTBassSynth> ;
+	doap:repository [
+		a doap:GitRepository ;
+		doap:location <https://github.com/jtemple967/JTBassSynth.git> ;
+		doap:browse <https://github.com/jtemple967/JTBassSynth>
+	] ;
 	mod:brand "JT" ;
 	mod:label "Bass Synth" ;
 	lv2:minorVersion 1 ;

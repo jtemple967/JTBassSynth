@@ -1,7 +1,7 @@
 @prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
 @prefix modgui: <http://moddevices.com/ns/modgui#> .
 
-<urn:jtbasssynth:bass-synth>
+<https://github.com/jtemple967/JTBassSynth>
 	modgui:gui [
 		modgui:resourcesDirectory <modgui> ;
 		modgui:iconTemplate <modgui/icon-jtbasssynth.html> ;
