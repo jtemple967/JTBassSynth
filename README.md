@@ -1,8 +1,8 @@
 # JTBassSynth (LV2)
 
-A monophonic, pitch-tracking bass synth effect modeled on MXR-style bass synth pedals.
-It takes mono audio in and sends mono audio out. It has eight voices, a resonant 4-pole
-ladder filter with an envelope sweep, an attack swell, glide and separate Dry and Synth levels.
+A monophonic, pitch-tracking bass synth effect that takes mono audio in and sends mono audio out. 
+It has eight voices, a resonant 4-poleladder filter with an envelope sweep, an attack swell, glide 
+and separate Dry and Synth levels.
 
 ## Signal flow
 
