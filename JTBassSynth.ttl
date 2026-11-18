@@ -25,7 +25,7 @@
 	mod:label "Bass Synth" ;
 	lv2:minorVersion 1 ;
 	lv2:microVersion 0 ;
-	rdfs:comment "Monophonic pitch-tracking bass synthesizer modeled on MXR-style bass synth pedals: eight voices, resonant ladder filter with envelope sweep, attack swell, glide and independent dry/synth levels." ;
+	rdfs:comment "Monophonic pitch-tracking bass synthesizer: eight voices, resonant ladder filter with envelope sweep, attack swell, glide and independent dry/synth levels." ;
 	lv2:optionalFeature lv2:hardRTCapable ;
 	lv2:port [
 		a lv2:AudioPort , lv2:InputPort ;
